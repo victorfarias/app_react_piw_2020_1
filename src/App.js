@@ -3,6 +3,10 @@ import ComponenteFuncional from './teste/Funcao';
 import ComponenteClasse from './teste/ComponenteClasse';
 import MyButton from './teste/MyButton';
 import MyTextInput from './teste/MyTextInput';
+import ClassesDinamicas from './teste/ClassesDinamicas';
+import ListaDeElementos from './teste/ListaDeElementos';
+import PaginaPrincipal from './PaginaPrincipal/PaginaPrincipal';
+
 
 class App extends React.Component {
 
@@ -20,11 +24,15 @@ class App extends React.Component {
   render() { 
     return ( 
       <div>
-        <ComponenteFuncional ></ComponenteFuncional>
+        {/* <ComponenteFuncional ></ComponenteFuncional>
         <ComponenteClasse name={this.name} sobrenome="Farias"></ComponenteClasse>
         <ComponenteClasse name="Tiago" sobrenome="Sei lá"></ComponenteClasse>
         <MyButton></MyButton>
         <MyTextInput changed={this.changedHandler}></MyTextInput>
+        <br></br>
+        <ClassesDinamicas></ClassesDinamicas>
+        <ListaDeElementos></ListaDeElementos> */}
+        <PaginaPrincipal></PaginaPrincipal>
       </div>
      );
   }

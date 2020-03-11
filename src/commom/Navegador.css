@@ -1,0 +1,19 @@
+.navegador{
+    background-color: #eee;
+    display: flex;
+}
+
+.navegador span{
+    display: block;
+    padding: 10px;
+}
+
+.navegador a{
+    display: block;
+    padding: 10px;
+}
+
+.navegador a:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
