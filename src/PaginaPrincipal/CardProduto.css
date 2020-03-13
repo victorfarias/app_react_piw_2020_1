@@ -3,9 +3,12 @@
     width: 200px;
     height: 80px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .card h3{
     /* padding: 10px; */
     background-color: #bbb;
+    margin: 0px;
+    padding: 10px;
 }

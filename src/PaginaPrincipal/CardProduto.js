@@ -2,12 +2,24 @@ import React, { Component } from 'react';
 import './CardProduto.css'
 
 class CardProduto extends Component {
-    state = {  }
+    state = { 
+        clicks: 0,
+    }
+
+    incrementarClick = () =>{
+        this.setState({clicks : this.state.clicks+1})
+    }
+
+    foiClicado = () =>{
+        this.incrementarClick();
+        this.props.foiClicado()
+    }
+
     render() { 
         return ( 
-            <div className="card">
-                <h3>Nome do produto</h3>
-                <span>R$ 120,00</span>
+            <div onClick={this.foiClicado} className="card">
+                <h3>{this.props.nome} {this.state.clicks}</h3>
+                <span>R$ {this.props.preco}</span>
             </div>
         );
     }
