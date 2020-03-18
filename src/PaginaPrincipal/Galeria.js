@@ -41,8 +41,8 @@ class Galeria extends Component {
         ]
     }
     
-    recebiClick = () => {
-        console.log("Alguém foi clicado");
+    recebiClick = (clicks) => {
+        console.log("Alguém foi clicado e ja clicaram " + clicks + " vezes");
     }
 
     render() { 
